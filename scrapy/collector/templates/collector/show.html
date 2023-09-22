@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>PlatformCode</th>
+        <th>Country</th>
+        <th>NPV</th>
+        <th>Status</th>
+        <th>Shelf</th>
+    </tr>
+    {% for post in posts %}
+        <tr>
+            <td>{{post.platformcode}}</td>
+            <td>{{post.country}}</td>
+            <td>{{post.npv}}</td>
+            <td>{{post.status}}</td>
+            <td>{{post.shelf}}</td>
+        </tr>
+    {%endfor%}
+</table>
